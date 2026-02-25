@@ -10,7 +10,13 @@ int main(void)
     {
         printf("It is a vowel letter.\n");
 
+        //The program is compiled.
         
+        //PROBLEM//
+        //The else block is not taking effect.
+        //The else-if block executes even if the input is supposed to trigger the else block.
+
+
         //first mistake:
         //the use of the (||)-or logical operator in the else-if block set every value of "w",  aside from one 
         //possible false, to be always true regardless of any special character or any letter input.
@@ -19,9 +25,9 @@ int main(void)
         //false(let's say the user typed 'a'), the rest of the conditions remains true. 
         //It is because the preceeding conditions have their own value. 
         //Like != 'e', != 'o', != 'u', and so on. 
-        //And since the operator used among the consdition values is or (||), the whole else-if block
+        //And since the operator used among the condition values is or (||), the whole else-if block
         //only needs one of the condition values to be true to execute regardless of the value of the other
-        //conditions or if the is a false condition value among the conditions for the given user input.
+        //conditions or if there is a false condition value among the conditions for the given user input.
 
         //second mistake
         //(w >= 'a' || w >= 'A' || w <= 'z' || w <= 'Z')
@@ -51,6 +57,11 @@ int main(void)
         //be ranged from and to, so the target value is determined and specific.
         //Make sure that you use &&(and) among the conditions so that all of it will be checked to be whether
         //true or false.
+
+        //additionally,
+        //a-z and A-Z are enclosed in the letter range and no other character are mixed within that range value.
+        //Hence, it is enough to require the value range of the letter and there is no need to specify the vowels
+        //for the not equal to(!=) just to detect the other characters.
     } 
     else if ((w != 'a' || w != 'e' || w != 'i' || w != 'u' || w != 'o' || w != 'A' || w != 'E' ||
          w != 'I' || w != 'U' || w != 'O') && (w >= 'a' || w >= 'A' || w <= 'z' || w <= 'Z'))
