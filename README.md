@@ -14,24 +14,3 @@ Guidelines for people who want to help improve it.
 
 ## License
 State your license (e.g., MIT).
-
-==================================================================================================
-
-# Project title
-# New Learner
-# First README.md file
-# Exploring and understanding README.md
-
-# C Language Pratice
-# No Language || No code content yet
-
-# Decription
-    Learning the path to collaborative skills. Using 
-
-# Installation
-
-# Usage
-
-# Contributing
-
-# License
